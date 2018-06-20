@@ -1,3 +1,4 @@
 #!/bin/sh
 
-echo '[{"version":"'$(date +%s)'"}]'
+META_UUID=`uuidgen -r`
+echo '[{"version": "'$META_UUID'"}]'
