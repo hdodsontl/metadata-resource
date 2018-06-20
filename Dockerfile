@@ -1,5 +1,7 @@
-FROM busybox:1.26
-LABEL maintainer "olhtbr@gmail.com"
+FROM alpine:latest
+
+RUN apk update
+RUN apk add util-linux
 
 COPY check in out /opt/resource/
 RUN chmod +x /opt/resource/*
